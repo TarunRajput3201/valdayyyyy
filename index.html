@@ -1156,7 +1156,7 @@
         function setupMobileCardFlip() {
             const cards = document.querySelectorAll('.memory-card');
             cards.forEach(card => {
-                card.addEventListener('click', function() {
+                card.addEventListener('touchend', function() {
                     // Toggle flipped class on mobile
                     if (window.innerWidth < 768) {
                         this.classList.toggle('flipped');
